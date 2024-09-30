@@ -473,7 +473,7 @@
     color: #fff; /* Change arrow color */
     background-color: rgba(0, 0, 0, 0); /* Add background color */
     
-    width: 65px;
+    
     border-radius: 50%;
     font-weight: 600;
     
@@ -483,18 +483,21 @@
   /* You can also change the size of the arrows */
   .swiper-button-next::after, .swiper-button-prev::after {
     font-size: 40px; /* Change arrow size */
-    margin-top: 350px;
+    /* padding-top: 350px; */
   }
   
-  /* Custom position (optional) */
+  
   .swiper-button-next {
-    right: 130px; /* Move the next arrow to the right */
+    right: 5%;
+    
   }
   
   .swiper-button-prev {
-    left: 130px; /* Move the prev arrow to the left */
+    left: 5%;
     
   }
+
+  
 
   .projectvideo {
     padding: 14px

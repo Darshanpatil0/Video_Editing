@@ -8,16 +8,13 @@ import Plaing from './Components/Plaing'
 import Meater from './Components/Meater'
 import Email from './Components/Email'
 import Fotter from './Components/Fotter'
-import LocomotiveScroll from 'locomotive-scroll';
-import { Link } from 'react-scroll'
+import LocomotiveScroll from 'locomotive-scroll'
 import Project from './Components/Project'
 
 const App = () => {
-  const locomotiveScroll = new LocomotiveScroll();
- 
   const [isLoaded, setIsLoaded] = useState(false)
   const [imagesLoaded, setImagesLoaded] = useState(0)
-  const totalImages = 4 // Adjust this number based on the actual number of images
+  const totalImages = 4 
 
   useEffect(() => {
     const loadImages = async () => {
@@ -45,7 +42,7 @@ const App = () => {
         setIsLoaded(true)
       } catch (error) {
         console.error('Failed to load images:', error)
-        setIsLoaded(true) // Set to true even if image loading fails to prevent infinite loading
+        setIsLoaded(true)
       }
     }
 
@@ -56,23 +53,12 @@ const App = () => {
     return (
       <div className="loading-screen">
         <div className="loading-bar" style={{ width: `${(imagesLoaded / totalImages) * 100}%` }}></div>
-        <div className='flex  bg-zinc-700 h-screen w-full items-center justify-center'>
-          
-          
         <div className='flex bg-zinc-700 h-screen w-full items-center justify-center'>
-      <div className='text-center'>
-        <span className='text-4xl font-semibold text-white'>Loading...</span>
-        <span className='text-4xl font-semibold text-white'>
-          
-        </span>
+          <div className='text-center'>
+            <span className='text-4xl font-semibold text-white'>Loading...</span>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    </div>
-
-          
-          
-        
     )
   }
 

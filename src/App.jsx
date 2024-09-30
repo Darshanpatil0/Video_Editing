@@ -61,9 +61,9 @@ const App = () => {
           
         <div className='flex bg-zinc-700 h-screen w-full items-center justify-center'>
       <div className='text-center'>
-        <span className='text-4xl font-semibold text-white'>Loading</span>
+        <span className='text-4xl font-semibold text-white'>Loading...</span>
         <span className='text-4xl font-semibold text-white'>
-          {' '}{Math.round((imagesLoaded / totalImages) * 100)}%
+          
         </span>
       </div>
     </div>
